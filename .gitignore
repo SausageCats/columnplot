@@ -1,0 +1,9 @@
+*.swp
+__pycache__
+data
+columnplot/CONFIG
+columnplot/README.md
+columnplot/columnplot.py
+INSTALL_FILELIST.txt
+Initial_set.sh
+install.sh

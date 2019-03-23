@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+
+#
+# command example
+# python3 columnplot.py --datetime '%Y-%m-%d %H:%M:%S.%f' '%Y-%m-%d %H:%M:%S' --print
+#
+
+
+from columnplot.cmdline import parser
+cl_args, filepath, print_params = parser()
+
+
+import matplotlib
+matplotlib.use('tkagg')
+
+from columnplot.generator import ColumnGenerator
+from columnplot.plotmain import ColumnPlotMain
+from columnplot.config import create_columnplot_param
+
+
+params = create_columnplot_param(cl_args, print_params)
+
+
+cg = ColumnGenerator(filepath, params)
+params['data'] = cg.get_data()
+params['figtitle'] = cg.get_title()
+
+cpa = ColumnPlotMain(params)
+cpa.plot()
