@@ -9,8 +9,11 @@ For more information, see usage section.
 
 ![](https://raw.githubusercontent.com/SausageCats/supplements/master/columnplot/columnplot.png)
 
+## Video
 
-# Prerequisite
+![](https://raw.githubusercontent.com/wiki/SausageCats/columnplot/demo.gif)
+
+## Prerequisite
 
 ColumnPlot creates a matplotlib graph that is embedded into a Tkinter window using python3.
 This requires the following packages:
@@ -20,7 +23,7 @@ This requires the following packages:
 
 
 
-# Installation
+## Installation
 
 ColumnPlot can be installed using the following command.
 
@@ -33,10 +36,10 @@ $ columnplot --version # to check the success of the installation
 
 
 
-# Usage
+## Usage
 
 
-## Data file notation
+### Data file notation
 
 A data file format is as follows:
 
@@ -58,7 +61,7 @@ The first row with comment is used for graph titles.
 This is disabled by setting \"enable_graphtitle\" option to False.
 
 
-## Command
+### Command
 
 ColumnPlot works using the following command.
 It creates multiple graphs where horizontal axis is the data number and vertical axis is the column data in a file.
@@ -82,7 +85,7 @@ Option&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Description
 \-v, \-\-version | Display version.
 
 
-## Configuration file
+### Configuration file
 
 ColumnPlot reads a configuration file (columnplot.cfg) that is placed in a directory \"$HOME/.config/columnplot\".
 The $COLUMNPLOTCFG environment variable changes the default config path.
@@ -118,7 +121,7 @@ mouse_xcoord       | int          | 2     | Specify a mouse number to change x-a
 
 
 
-## Getting started
+### Getting started
 
 Here is a simple tutorial on how to use ColumnPlot.
 
